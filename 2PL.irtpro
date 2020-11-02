@@ -1,0 +1,45 @@
+Project:
+    Name = responses;
+
+Data:
+    File = .\responses.ssig;
+
+Analysis:
+    Name = Test1;
+    Mode = Calibration;
+
+Title:
+2PL
+
+Comments:
+Estimation:
+    Method = BAEM;
+    E-Step = 500, 1e-05;
+    SE = S-EM;
+    M-Step = 50, 1e-05;
+    Quadrature = 61, 6;
+    SEM = 0.001;
+    SS = 1e-05;
+
+Scoring:
+    Mean = 0;
+    SD = 1;
+
+Miscellaneous:
+    Decimal = 2;
+    Processors = 6;
+    Print CTLD, P-Nums, Diagnostic;
+    Min Exp = 1;
+
+Groups:
+
+Group :
+    Dimension = 1;
+    Items = A : Y;
+    Codes(A : Y) = 0(0), 1(1);
+    Model(A : Y) = 2PL;
+    Mean = 0.0;
+    Covariance = 1;
+
+Constraints:
+
