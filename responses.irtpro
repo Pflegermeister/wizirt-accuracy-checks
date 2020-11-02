@@ -1,0 +1,77 @@
+Project:
+    Name = responses;
+
+Data:
+    File = .\responses.ssig;
+
+Analysis:
+    Name = Test1;
+    Mode = Calibration;
+
+Title:
+Practice file
+
+Comments:
+A comment. 
+In fact, many comments.
+Like, a lot of comments.
+Like so many comments, you may wonder, is this guy a goober? What is he even doing?
+"I don't know," you might sayto your self, "perhaps he is testing to see how the software utilizes comments?"
+And in this last comment, you would find the truth.
+
+Estimation:
+    Method = BAEM;
+    E-Step = 500, 1e-05;
+    SE = S-EM;
+    M-Step = 50, 1e-05;
+    Quadrature = 61, 6;
+    SEM = 0.001;
+    SS = 1e-05;
+
+Scoring:
+    Mean = 0;
+    SD = 1;
+
+Miscellaneous:
+    Decimal = 2;
+    Processors = 6;
+    Print CTLD, P-Nums, Diagnostic;
+    Min Exp = 1;
+
+Groups:
+
+Group :
+    Dimension = 1;
+    Items = A : Y;
+    Codes(A : Y) = 0(0), 1(1);
+    Model(A : Y) = 2PL;
+    Mean = 0.0;
+    Covariance = Free;
+
+Constraints:
+    (A, Slope[0]) = 1;
+    (B, Slope[0]) = 1;
+    (C, Slope[0]) = 1;
+    (D, Slope[0]) = 1;
+    (E, Slope[0]) = 1;
+    (F, Slope[0]) = 1;
+    (G, Slope[0]) = 1;
+    (H, Slope[0]) = 1;
+    (I, Slope[0]) = 1;
+    (J, Slope[0]) = 1;
+    (K, Slope[0]) = 1;
+    (L, Slope[0]) = 1;
+    (M, Slope[0]) = 1;
+    (N, Slope[0]) = 1;
+    (O, Slope[0]) = 1;
+    (P, Slope[0]) = 1;
+    (Q, Slope[0]) = 1;
+    (R, Slope[0]) = 1;
+    (S, Slope[0]) = 1;
+    (T, Slope[0]) = 1;
+    (U, Slope[0]) = 1;
+    (V, Slope[0]) = 1;
+    (W, Slope[0]) = 1;
+    (X, Slope[0]) = 1;
+    (Y, Slope[0]) = 1;
+
